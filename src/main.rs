@@ -1,6 +1,6 @@
 fn longest<'a>(x: &str, y: &str) -> &'a str {
-    let result: &'a str = "really long string";
-    result
+    let result = String::from("really long string");
+    result.as_str()
 }
 
 fn main() {
