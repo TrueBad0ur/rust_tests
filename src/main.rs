@@ -1,3 +1,12 @@
+fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
+    if x.len() > y.len() {
+        x
+    } else {
+        y
+    }
+}
+
 fn main() {
-    println!("For tests1");
+    let a = longest("a", "Hel");
+        println!("For tests1");
 }
